@@ -1,0 +1,99 @@
+# Carpeta de dependencias
+node_modules/
+
+# Archivos de construcción
+/dist
+/build
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Logs y archivos temporales
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+*.log.*
+
+# Dependencias locales
+/.pnp
+.pnp.js
+
+# Archivos de caché de npm y yarn
+/node_modules
+.cache/
+yarn.lock
+package-lock.json
+
+# Archivos de configuración IDE
+.idea/
+.vscode/
+
+# Archivos compilados de JavaScript y TypeScript
+*.js
+*.js.map
+*.d.ts
+
+# Archivos compilados de CSS
+*.css
+
+# Archivos compilados de SASS
+*.scssc
+
+# Archivos compilados de Less
+*.less.css
+
+# Archivos compilados de Stylus
+*.styl.css
+
+# Archivos compilados de CoffeeScript
+*.js
+
+# Archivos de respaldo y temporales
+*~
+*.swp
+._*
+.DS_Store
+
+# Archivos de prueba y cobertura
+/coverage
+/cover
+*.ico
+*.svg
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.eot
+*.otf
+*.ttf
+*.woff
+*.woff2
+*.mp4
+*.webm
+*.ogg
+*.wav
+*.mp3
+*.flac
+*.aac
+*.zip
+*.gz
+*.tar.gz
+*.rar
+*.tgz
+*.bzip
+*.bzip2
+*.7z
+*.exe
+*.dmg
+*.iso
+*.img
+*.apk
+*.jar
+*.war
+*.ear
+*.msi
+*.deb
+*.rpm

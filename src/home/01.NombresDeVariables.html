@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usar nombres que revelen las intenciones</title>
+    <style>
+        /* Estilos para resaltar la sintaxis del código */
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .keyword {
+            color: blue;
+        }
+
+        .comment {
+            color: green;
+        }
+
+        /* Añade más estilos para otras partes del código según sea necesario */
+    </style>
+</head>
+<body>
+
+<div>
+    <h1>Usar nombres que revelen las intenciones</h1>
+    <p>El nombre de una variable, función o clase debe responder una serie de
+        cuestiones básicas. Debe indicar por qué existe, qué hace y cómo se usa.</p>
+
+    <h3>Ejemplo</h3>
+    <h4>Mal código</h4>
+    <pre>
+        <span class="keyword">public</span> List&lt;int[]&gt; getThem() {
+            List&lt;int[]&gt; list1 = new ArrayList&lt;int[]&gt;();
+            <span class="keyword">for</span> (int[] x : theList)
+                <span class="keyword">if</span> (x[0] == 4)
+                    list1.add(x);
+            <span class="keyword">return</span> list1;
+        }
+    </pre>
+
+    <h4>Buen código</h4>
+    <pre>
+        <span class="keyword">public</span> List&lt;Celdas&gt; obtenerCeldasMarcadas() {
+            List&lt;Celdas&gt; celdasMarcadas = new ArrayList&lt;Celdas&gt;();
+            <span class="keyword">for</span> (Celdas celdas : juegoDeMesa)
+                <span class="keyword">if</span> (celdas.estaMarcada())
+                    celdasMarcadas.add(celdas);
+            <span class="keyword">return</span> celdasMarcadas;
+        }
+    </pre>
+</div>
+
+</body>
+</html>
