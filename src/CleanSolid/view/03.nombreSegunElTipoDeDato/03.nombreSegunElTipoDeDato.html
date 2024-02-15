@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre Segun El Tipo DeDato</title>
+</head>
+
+<body>
+    <h1>Nombres según el dipo de dato</h1>
+    <div>
+        <h2>Arreglos - Arrays</h2>
+        <h3>Ejemplo</h3>
+        <h4>Malo</h4>
+        <pre>
+        const frutas = ['manzana', 'platano', 'fresa'];
+        </pre>
+        <h4>Regular</h4>
+        <pre>
+        const listaDeFrutas = ['manzana', 'platano', 'fresa'];
+        </pre>
+        <h4>Buena</h4>
+        <pre>
+        const frutas = ['manzana', 'platano', 'fresa'];
+        </pre>
+        <h4>Mejor</h4>
+        <pre>
+        const nombresDefrutas = ['manzana', 'platano', 'fresa'];
+        </pre>
+    </div>
+
+    <div>
+        <h2>Booleanos</h2>
+        <p>es(is), tiene(has), puede(can), esto siempre estando en positivo </p>
+
+        <h3>Ejemplo</h3>
+        <h4>Malo</h4>
+        <pre>
+        const abierto = true;
+        const escrito = true;
+        const fruta = true;
+        const activo = false;
+        const noValor = true;
+        const noVacio = false;
+        </pre>
+
+        <h4>Bueno</h4>
+        <pre>
+        const estaAbierto = true;
+        const puedeEscribir = true;
+        const tieneFruta = true;
+        const estaActive = false;
+        const tieneValores = true;
+        const estaVacio = false;
+        </pre>
+
+        <h4>Mejor</h4>
+        <pre>
+        const isOpen = true;
+        const canWrite = true;
+        const hasFruit = true;
+        const isActive = false;
+        const hasValues = true;
+        const isEmpty = false;
+        </pre>
+
+    </div>
+
+    <div>
+        <h2>Números</h2>
+        <p>min, max, total u of para referirnos a un valor numerico</p>
+
+        <h3>Ejemplo</h3>
+        <h4>Malo</h4>
+        <pre>
+            const fruits = 3;
+            const cars = 10;
+        </pre>
+
+        <h4>Mejor</h4>
+        <pre>
+            const maxFruits = 3;
+            const minFruits = 3;
+            const totalFruits = 3;
+            const totalOfcars = 10;
+        </pre>
+    </div>
+
+    <div>
+        <h2>Funciones</h2>
+        <p>deben representar acciones, construidas por el vervo con un sustantivo, explicando lo que hace sin entrar
+            todo lo que hace tecnicamente</p>
+
+        <h3>Ejemplo</h3>
+        <h4>Malo</h4>
+        <pre>
+            createUserIfNotExists();
+            updateUserIfNotEmpty();
+            sendEmailIfFieldsValid();
+        </pre>
+
+        <h4>Mejor</h4>
+        <pre>
+            createUser();
+            updateUser();
+            sendEmail();
+        </pre>
+    </div>
+</body>
+</html>

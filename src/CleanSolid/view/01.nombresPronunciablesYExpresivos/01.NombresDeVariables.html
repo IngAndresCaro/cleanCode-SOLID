@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usar nombres que revelen las intenciones</title>
+    <title>Nombres Pronunciables y expresivos</title>
     <style>
         /* Estilos para resaltar la sintaxis del código */
         pre {
@@ -23,16 +24,26 @@
         /* Añade más estilos para otras partes del código según sea necesario */
     </style>
 </head>
+
 <body>
 
-<div>
-    <h1>Usar nombres que revelen las intenciones</h1>
-    <p>El nombre de una variable, función o clase debe responder una serie de
-        cuestiones básicas. Debe indicar por qué existe, qué hace y cómo se usa.</p>
+    <div>
+        <h1>Nombres Pronunciables y expresivos o Usar nombres que revelen las intenciones</h1>
+        <p>El nombre de una variable, función o clase debe responder una serie deD cuestiones básicas. Debe indicar por
+            qué existe, qué hace y cómo se usa. esto recordando que no es necesario ahorrar caracteres, devemos evitando
+            información tecnica de lo que hace la función</p>
 
-    <h3>Ejemplo</h3>
-    <h4>Mal código</h4>
-    <pre>
+        <h3>Ejemplo</h3>
+        <h3>Mal codigo</h3>
+        <p>const n = 53;</p>
+        <p>const tx = 0.15;</p>
+        <h4>Buen código</h4>
+        <p>const numberOfUnits = 53;</p>
+        <p>const tax = 0.15;</p>
+
+
+        <h4>Mal código</h4>
+        <pre>
         <span class="keyword">public</span> List&lt;int[]&gt; getThem() {
             List&lt;int[]&gt; list1 = new ArrayList&lt;int[]&gt;();
             <span class="keyword">for</span> (int[] x : theList)
@@ -40,10 +51,10 @@
                     list1.add(x);
             <span class="keyword">return</span> list1;
         }
-    </pre>
+        </pre>
 
-    <h4>Buen código</h4>
-    <pre>
+        <h4>Buen código</h4>
+        <pre>
         <span class="keyword">public</span> List&lt;Celdas&gt; obtenerCeldasMarcadas() {
             List&lt;Celdas&gt; celdasMarcadas = new ArrayList&lt;Celdas&gt;();
             <span class="keyword">for</span> (Celdas celdas : juegoDeMesa)
@@ -52,7 +63,8 @@
             <span class="keyword">return</span> celdasMarcadas;
         }
     </pre>
-</div>
+    </div>
 
 </body>
+
 </html>

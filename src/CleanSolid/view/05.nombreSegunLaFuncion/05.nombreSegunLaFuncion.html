@@ -1,0 +1,68 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre Segun la Función</title>
+</head>
+
+<body>
+    <h1>Funciones</h1>
+    <p>"Sabemos que estamos desarrollando código limpio cuando cada función hace exactamente lo que su nombre indica"
+        <span>Ward Cunningham</span>
+    </p>
+   <h2>Recomendaciones</h2>
+
+   <ul>
+    <li>Simplicidad es fundamental.</li>
+    <li>Funciones de tamaño reducido.</li>
+    <li>Funciones de una sola línea sin causar complejidad.</li>
+    <li>Menos de 20 líneas</li>
+    <li>Evita el uso del "else".</li>
+    <li>Prioriza el uso de la condicional ternaria</li>
+   </ul>
+
+    <h2>Ejemplo</h2>
+    <h3>Malo</h3>
+    <pre>
+        //Se espera que verifique revise contraseña, cree el usuario en base de datos
+        function sendEmail(): boolean{
+            return true
+        } 
+    </pre>
+    <h3>Bien</h3>
+    <pre>
+        //Verifica correo
+        function sendEmail(toWhom: string): boolean{
+            if( !toWhom.includes('@') return false)
+            return true
+        }
+    </pre>
+
+    <h2>Parámetros y argumentos</h2>
+    <h3>Bien</h3>
+    <pre>
+        //Se recomienda que se deben limitar a 3 parámetros posicionales
+        function sendEmail(toWhom: string, from: string, body: string): boolean{
+            if( !toWhom.includes('@') return false)
+            return true
+        }
+    </pre>
+
+    <h3>Mejor</h3>
+    <pre>
+        //Se colocan los parámetros en un objeto
+        interface SenEmailOptions{
+            toWhom: string; 
+            from: string;
+            body: string;
+        }
+        function sendEmail({toWhom, from, body}: SenEmailOptions): boolean{
+            if( !toWhom.includes('@') return false)
+            return true
+        }
+
+    </pre>
+</body>
+
+</html>
