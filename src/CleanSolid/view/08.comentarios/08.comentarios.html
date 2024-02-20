@@ -1,0 +1,69 @@
+<div>
+    <h1>Comentarios</h1>
+    <p>No hay nada más útil que un comentario bien colocado. No hay nada que
+        colapse más un módulo que comentarios dogmáticos innecesarios. No hay
+        nada más dañino que un comentario antiguo que propague mentiras y
+        desinformación.</p>
+    <p>Los comentarios siempre son fallos. Debemos usarlos porque no
+        siempre sabemos cómo expresarnos sin ellos pero su uso no es motivo de
+        celebración.</p>
+
+    <h2>Porque son malos?</h2>
+    <p>El código cambia y evoluciona. Los fragmentos cambian de lugar, se
+        bifurcan, se reproducen y se vuelven a combinar para crear quimeras.</p>
+
+    <h3>Ejemplo</h3>
+    <h4>Mal codigo</h4>
+    <pre>// Comprobar si el empleado tiene derecho a todos los beneficios
+        if ((employee.flags & HOURLY_FLAG) &&
+        (employee.age > 65))</pre>
+    <h4>Buen codigo</h4>
+    <pre>
+        if (employee.isEligibleForFullBenefits())
+    </pre>
+
+    <h2>Comentarios de calidad</h2>
+    <h3>Comentarios legales</h3>
+    <pre>// Copyright (C) 2003,2004,2005 de Object Mentor, Inc. Todos los derechos
+        reservados.
+        // Publicado bajo las condiciones de la Licencia pública general GNU versión
+        2 o posterior.</pre>
+
+    <h3>Comentarios informativos</h3>
+    <pre>// Devuelve una instancia del elemento Responder probado.
+        protected abstract Responder responderInstance();</pre>
+
+    <h3>Advertir de las consecuencias</h3>
+    <pre>// No ejecutar a menos
+        // que le sobre tiempo.
+        public void _testWithReallyBigFile()
+        {
+        writeLinesToFile(10000000);
+        response.setBody(testFile);
+        response.readyToSend(this);
+        String responseString = output.toString();
+        assertSubString(“Content-Length: 1000000000”, responseString);        
+        assertTrue(bytesSent > 1000000000);
+        } 
+    </pre>
+
+
+    <h3>Comentarios TODO</h3>
+    <p>el comentario TODO explica por qué la función tiene una
+        implementación incorrecta y cuál debe ser su futuro.</p>
+
+    <pre>// TODO-MdM no son necesarios
+        // Esperamos que desaparezca en el modelo definitivo
+        protected VersionInfo makeVersion() throws Exception
+        {
+        return null;
+        }</pre>
+
+   <h3>Código comentado</h3>
+   <p>No hay nada más odioso que el código comentado. ¡No lo haga!</p>
+
+   <p>Los lectores que vean código comentado no tendrán el valor de borrarlo.
+    Pensarán que está ahí por algo y que es demasiado importante para borrarlo.
+    Por ello, el código comentado se acumula como los sedimentos en una botella
+    de vino malo.</p>
+</div>
