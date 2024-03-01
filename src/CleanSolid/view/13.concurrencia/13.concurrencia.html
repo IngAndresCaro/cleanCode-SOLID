@@ -1,5 +1,8 @@
 <div>
     <h1>Concurrencia</h1>
+    <p>La concurrencia en la programación se refiere a la capacidad de ejecutar múltiples tareas simultáneamente dentro
+        de un programa. Esto significa que, en lugar de ejecutar una tarea a la vez de principio a fin, el programa
+        puede realizar varias tareas al mismo tiempo, aumentando así la eficiencia y la capacidad de respuesta.</p>
     <p>“Los objetos son abstracciones de procesamiento.
         Los subprocesos son abstracciones de programaciones”.
         <span> —James O. Coplien </span>
@@ -8,5 +11,28 @@
         lo que se hace de dónde se hace. En aplicación de un solo proceso, el qué y el
         cuándo están tan firmemente vinculados que el estado de la aplicación se
         puede determinar analizando la huella de la pila.</p>
+    <p>Es complicado conseguir código concurrente correcto. El código sencillo se
+        puede complicar al añadir varios procesos y datos compartidos. Si tiene que
+        crear código concurrente, tendrá que hacerlo con rigor o se enfrentará a
+        sutiles y esporádicos fallos.</p>
+    <P>Un ejemplo sencillo de concurrencia podría ser un programa que tiene dos procesos: uno que realiza cálculos
+        matemáticos y otro que imprime los resultados en pantalla. En lugar de ejecutar primero todos los cálculos y
+        luego imprimir los resultados, el programa puede ejecutar los cálculos y la impresión de manera concurrente, de
+        modo que mientras se realizan los cálculos, la impresión también comienza a mostrarse en pantalla.</P>
 
+    <pre>función calcularPi() {
+        // Realizar cálculos complejos para aproximar el valor de Pi
+    }
+    
+    función imprimirResultados(resultado) {
+        // Imprimir los resultados en pantalla
+    }
+    
+    // Ejecutar las funciones de manera concurrente
+    concurrente {
+        calcularPi()
+    }
+    concurrente {
+        imprimirResultados(resultado)
+    }</pre>    
 </div>
